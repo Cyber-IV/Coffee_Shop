@@ -26,6 +26,9 @@
     font-weight: 700;
 }
 
+.nav-container{
+    padding: 2rem 0;
+}
 .nav__link{
     display: block;
     text-align: center;
@@ -96,6 +99,12 @@
 }
 .tuto__button{
     background-color: var(--mainColor);
+}
+
+.footer{
+    background-color: var(--black);
+    padding: 3rem 0;
+    margin-top: 2rem;
 }
 
 /* Tablet */
