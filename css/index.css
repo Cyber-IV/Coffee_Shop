@@ -72,6 +72,32 @@
     background-color: var(--black);
 }
 
+.tutorials{
+    list-style: none;
+}
+.widget-tuto{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+.widget-tuto:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.widget-tuto__label,
+.widget-tuto__info{
+    font-size: 2rem;
+}
+.widget-tuto__label{
+    font-family: var(--titlesFont);
+    font-weight: 700;
+}
+.widget-tuto__info{
+    font-weight: 400;
+}
+.tuto__button{
+    background-color: var(--mainColor);
+}
+
 /* Tablet */
 @media (min-width: 768px) {
     .nav-bar{
