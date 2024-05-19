@@ -23,8 +23,8 @@ body{
 
 /* Globals */
 .container{
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
+    /* min toma el valor menor cuando la resolucion se va reduciendo */
     margin: 0 auto;
 }
 .center-text{
