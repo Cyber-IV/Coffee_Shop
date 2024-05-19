@@ -8,50 +8,6 @@
     --black: #000;
 }
 
-.header{
-    background-image: url(../img/banner.jpg);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.logo{
-    color: var(--white);
-}
-.logo__name{
-    font-weight: 400;
-}
-.logo_bold{
-    font-weight: 700;
-}
-
-.nav-container{
-    padding: 2rem 0;
-}
-.nav__link{
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--white);
-}
-
-.header__text-container{
-    text-align: center;
-    color: var(--white);
-    margin-top: 8rem;
-}
-.header__title{
-    font-size: 4rem;
-    padding: 0 2rem;
-    line-height: 4.5rem;
-}
-.header__text{
-    font-size: 2rem;
-    padding: 0 4rem;
-    margin-top: 2rem;
-}
-
 .entry{
     border-bottom: 1px solid var(--gray);
     margin-bottom: 2rem;
@@ -101,28 +57,8 @@
     background-color: var(--mainColor);
 }
 
-.footer{
-    background-color: var(--black);
-    padding: 3rem 0;
-    margin-top: 2rem;
-}
-
 /* Tablet */
 @media (min-width: 768px) {
-    .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navigation{
-        display: flex;
-        gap: 2rem;
-    }
-    .header__text-container{
-        margin-top: 16rem;
-    } 
-
-
     .main-container{
         display: grid;
         grid-template-columns: 2fr 1fr;
