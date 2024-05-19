@@ -1,0 +1,17 @@
+:root{
+    --titlesFont: "PT Sans", sans-serif;
+    --textFont: "Open Sans",  sans-serif;
+
+    --mainColor: #784D3C;
+    --gray:#E1E1E1;
+    --white: #fff;
+    --black: #000;
+}
+
+@media (min-width: 992px) {
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
