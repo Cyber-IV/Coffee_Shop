@@ -1,0 +1,58 @@
+:root{
+    --titlesFont: "PT Sans", sans-serif;
+    --textFont: "Open Sans",  sans-serif;
+
+    --mainColor: #784D3C;
+    --gray:#E1E1E1;
+    --white: #fff;
+    --black: #000;
+}
+
+.tutorials{
+    display: grid;
+    gap: 4rem;
+}
+.tutorial{
+    border-bottom: 1px solid var(--gray);
+}
+.tutorial:last-of-type{
+    border-bottom: none;
+}
+.tutorial__information{
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.tutorial__information h4{
+    margin-bottom: 1rem !important;
+}
+.tutorial__label{
+    font-weight: bold;
+}
+.tutorial__info{
+    font-weight: normal;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .tutorials{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .tutorials{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tutorial{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+    }
+    .tutorial:last-of-type{
+        border-bottom: none;
+    }
+    .tutorial__information h4{
+        font-size: 900 ;
+    }
+}
