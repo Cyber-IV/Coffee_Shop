@@ -23,6 +23,7 @@
     text-align: center;
 }
 
+/* Tablet */
 @media (min-width: 768px) {
     .entry__img{
         margin-bottom: 2rem;
@@ -30,5 +31,22 @@
         max-width: 75%;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .entry{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    .entry__title{
+        grid-column: 1/3;
+    }
+    .entry__img{
+        max-width: 100%;
     }
 }
