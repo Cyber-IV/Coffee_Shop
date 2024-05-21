@@ -16,17 +16,6 @@
     border-bottom: none;
     margin-bottom: 0;
 }
-.button{
-    display: block;
-    font-family: var(--titlesFont);
-    color: var(--white);
-    text-align: center;
-    padding: 1rem 3rem;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
 .entry__button{
     background-color: var(--black);
 }
