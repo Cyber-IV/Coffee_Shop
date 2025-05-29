@@ -6,7 +6,7 @@ sendData_btn.addEventListener('click', (e) => {
 }); */
 
 // Eventos de inputs y text areas - Variables en 1ra posicion
-const inputed_data = {
+const data = {
     name: '',
     email: '',
     message: '',
@@ -22,27 +22,40 @@ const form = document.querySelector('.contact-form');
     console.log(e.target.value); // e - Es el evento que sucede / target - El objetivo del evento / value - El valor del input
 }); */
 // Event listeners en 2da posicion
-name_input.addEventListener('change', saveDataInput);
-email_input.addEventListener('change', saveDataInput);
-message_input.addEventListener('change', saveDataInput);
+name_input.addEventListener('input', saveDataInput);
+email_input.addEventListener('input', saveDataInput);
+message_input.addEventListener('input', saveDataInput);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Validar formulario
-
+    const { name, email, message } = data;
+    if(name === '' || email === '' || message === ''){
+        showNotification(
+            {notifyType:'contactError', notifyText:'TODOS LOS CAMPOS SON REQUERIDOS', seconds:5000}
+        );
+        return;
+    }
     // Enviar formulario
+    showNotification(
+        {notifyType:'contactSuccesed', notifyText:'MENSAJE HA SIDO ENVIADO', seconds:3000}
+    );
 });
 
 // Funciones que se necesiten en 3ra posicion
 function saveDataInput(e){
     // Es importante que los id de los inputs y las propiedades del objeto donde se guardaran
-    inputed_data[e.target.id] = e.target.value;
-    console.log(inputed_data);
+    data[e.target.id] = e.target.value;
 }
 
-function validateForm(){
-
-}
-function sendForm(){
-
+function showNotification({notifyType, notifyText, seconds}){
+    let notification = document.createElement('P');
+    notification.textContent = notifyText;
+    notification.classList.add(notifyType);
+    notification.id = 'contactNotification';
+    
+    form.appendChild(notification);
+    setTimeout(() => {
+        notification.remove();
+    }, seconds);
 }
