@@ -1,50 +1,50 @@
 # Coffee_Shop
 
-Coffee_Shop es un proyecto de práctica que simula la página web de una cafetería, enfocada en la venta de café y postres, así como en la difusión de información relevante sobre el café.
+Coffee_Shop is a practice project that simulates a coffee shop website, focused on selling coffee and desserts, as well as sharing relevant information about coffee.
 
-## Características actuales
+## Current Features
 
-- **Página principal** con información sobre café y productos.
-- **Formulario de contacto** con validación básica en JavaScript:
-  - Verifica que todos los campos estén completos antes de enviar.
-  - Muestra notificaciones de error o éxito al usuario.
-  - Previene el envío por defecto del formulario para evitar recargas innecesarias.
-- **Interactividad** en los formularios usando eventos `input` y manipulación del DOM.
-- **Estructura modular** en archivos separados para HTML, CSS y JavaScript.
+- **Main page** with information about coffee and products.
+- **Contact form** with basic validation in JavaScript:
+  - Checks that all fields are completed before submitting.
+  - Shows error or success notifications to the user.
+  - Prevents the default form submission to avoid unnecessary page reloads.
+- **Interactivity** in forms using `input` events and DOM manipulation.
+- **Modular structure** with separate files for HTML, CSS, and JavaScript.
 
-## Cosas que aún no están implementadas
+## Features Not Yet Implemented
 
-- Validación avanzada de email (formato correcto).
-- Envío real de datos a un servidor (actualmente solo muestra notificaciones locales).
-- Limpieza automática del formulario tras envío exitoso.
-- Accesibilidad mejorada (uso de etiquetas `label`, mensajes accesibles, etc).
-- Prevención de envíos múltiples (deshabilitar botón mientras se procesa).
-- Manejo de errores de red si se implementa el envío real.
-- Pruebas unitarias para las funciones de JavaScript.
+- Advanced email validation (correct format).
+- Actual data submission to a server (currently only shows local notifications).
+- Automatic form clearing after successful submission.
+- Improved accessibility (use of `label` tags, accessible messages, etc).
+- Prevention of multiple submissions (disable button while processing).
+- Network error handling if real submission is implemented.
+- Unit tests for JavaScript functions.
 
-## Instalación
+## Installation
 
 ```
 git clone <repository_url>
 cd <project_directory>
 ```
 
-## Uso
+## Usage
 
-Abre el archivo `index.html` en tu navegador.
+Open the `index.html` file in your browser.
 
-## Estructura del Proyecto
+## Project Structure
 
-- `index.html` — Página principal.
-- `contact.html` — Formulario de contacto.
-- `about_us.html` — Informacion adicional de la empresa
-- `entry.html` — Entrada sencilla del blog
-- `tutorials.html` — Cursos adicionales
-- `js/` — Scripts de JavaScript (por ejemplo, `contact.js`).
-- `css/` — Hojas de estilo.
-- `img/` — Imágenes del sitio.
+- `index.html` — Main page.
+- `contact.html` — Contact form.
+- `about_us.html` — Additional company information.
+- `entry.html` — Simple blog entry.
+- `tutorials.html` — Additional courses.
+- `js/` — JavaScript scripts (e.g., `contact.js`).
+- `css/` — Stylesheets.
+- `img/` — Site images.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - HTML5
 - CSS3
